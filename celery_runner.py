@@ -2,7 +2,8 @@
 # Generate a Celery instance with our Flask configs
 #   PS: use this command to run Celery:
 #       celery -A celery_runner.celery_app worker --loglevel=info
-#
+#   BONUS: Enable RabbitMQ web app Management:
+#       $> sudo rabbitmq-plugins enable rabbitmq_management
 
 from celery import Celery
 from main import app
